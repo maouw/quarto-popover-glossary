@@ -1,0 +1,1 @@
+Sitemap: https://github.com/maouw/quarto-popover-glossary/sitemap.xml
