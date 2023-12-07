@@ -1,4 +1,4 @@
-# Quarto-Popover-GLossary
+# Quarto-Popover-Glossary
 
 This extension provides shortcodes for [popover-glossary](https://github.com/maouw/quarto-popover-glossary) in quarto. It uses the [Popper](https://popper.js.org) library to create popovers with glossary definitions.
 
