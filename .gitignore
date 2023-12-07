@@ -6,3 +6,6 @@
 .quarto
 
 /.quarto/
+
+/.luarc.json
+_site/
