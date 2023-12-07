@@ -12,5 +12,5 @@ format:
       dark: darkly
       light: flatly
 
-popover-glossary:
+popover_glossary:
   path: glossary.yml

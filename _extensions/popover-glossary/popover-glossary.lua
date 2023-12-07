@@ -54,8 +54,8 @@ local function mergeOptions(userOptions, meta)
   }
 
   -- override with meta values first
-  if meta.glossary ~= nil then
-    for k, v in pairs(meta.glossary) do
+  if meta.popover_glossary ~= nil then
+    for k, v in pairs(meta.popover_glossary) do
       local value = pandoc.utils.stringify(v)
       if value == 'true' then value = true end
       if value == 'false' then value = false end
