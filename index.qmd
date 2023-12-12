@@ -1,3 +1,6 @@
+```
+
+```
 # Quarto-Popover-Glossary
 
 This extension provides shortcodes for [popover-glossary](https://github.com/maouw/quarto-popover-glossary) in quarto. It uses the [Popper](https://popper.js.org) library to create popovers with glossary definitions.
@@ -49,9 +52,9 @@ The simplest use starts with the word `term` and then the term to be defined. Cl
 
 No need to change if you're just using different case:
 
-`{{{< term html >}}}`
+`{{{< term sesoi >}}}`
 
-{{< term html >}}
+{{< term sesoi >}}
 
 Use quotes if your term is more than one word.
 
@@ -59,11 +62,17 @@ Use quotes if your term is more than one word.
 
 {{< term "effect size" >}}
 
-Add a `display` argument if you want to display something different than the term:
+You can use Markdown or HTML in the definition, too:
 
-`{{{< term alpha display="alpha criterion" >}}}`
+`{{{< term html >}}}`
 
-{{< term alpha display="alpha criterion" >}}
+{{< term "html" >}}
+
+If you want the link to display something different from the term, append a pipe (`|`) character and the display text.
+
+`{{{< term "alpha|alpha criterion" >}}}`
+
+The {{< term "alpha|alpha criterion" >}} is...
 
 ### Definitions
 
