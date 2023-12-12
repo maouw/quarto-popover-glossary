@@ -98,7 +98,6 @@ return {
     local options = mergeOptions(kwargs, meta)
     local term = string.lower(string.gsub(pandoc.utils.stringify(args[1]), "[|].*", ""))
     local display = string.gsub(pandoc.utils.stringify(args[1]), ".*[|]", "")
-    print("term: " .. term .. " display: " .. display)
 
     -- get definition
     local def = ""
