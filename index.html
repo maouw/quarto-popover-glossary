@@ -134,6 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<pre><code></code></pre>
 <section id="quarto-popover-glossary" class="level1">
 <h1>Quarto-Popover-Glossary</h1>
 <p>This extension provides shortcodes for <a href="https://github.com/maouw/quarto-popover-glossary">popover-glossary</a> in quarto. It uses the <a href="https://popper.js.org">Popper</a> library to create popovers with glossary definitions.</p>
@@ -142,24 +143,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <section id="installing" class="level3">
 <h3 class="anchored" data-anchor-id="installing">Installing</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension maouw/quarto-popover-glossary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension maouw/quarto-popover-glossary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This will install the extension under the <code>_extensions</code> subdirectory. If you’re using version control, you will want to check in this directory.</p>
 </section>
 <section id="glossary-file" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-file">Glossary file</h3>
 <p>You can store definitions in a YAML file. Use markdown to create paragraphs, links, and lists. Make sure each new line in a definition is indented two spaces (sorry YAML is a bit picky, but it’s the best human-editable solution).</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">SESOI</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  Smallest Effect Size of Interest: the smallest effect that is theoretically or practically meaningful</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  See [Equivalence Testing for Psychological Research](https://doi.org/10.1177/2515245918770963) for a tutorial on methods for choosing an SESOI.</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">p-value</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  The probability of the observed data, or more extreme data, if the null hypothesis is true. The lower the p-value, the higher the test statistic, and less likely it is to observe the data if the null hypothesis is true.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">SESOI</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  Smallest Effect Size of Interest: the smallest effect that is theoretically or practically meaningful</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  See [Equivalence Testing for Psychological Research](https://doi.org/10.1177/2515245918770963) for a tutorial on methods for choosing an SESOI.</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">p-value</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  The probability of the observed data, or more extreme data, if the null hypothesis is true. The lower the p-value, the higher the test statistic, and less likely it is to observe the data if the null hypothesis is true.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="defaults" class="level3">
 <h3 class="anchored" data-anchor-id="defaults">Defaults</h3>
 <p>In the YAML header of your document, or the _quarto.yml file for your book or website, add the following defaults:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">popover-glossary</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">path</span><span class="kw">:</span><span class="at"> glossary.yml</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">popover-glossary</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">path</span><span class="kw">:</span><span class="at"> glossary.yml</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Set path to the path to your glossary YAML file.</p>
 </section>
 </section>
@@ -167,78 +168,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="examples">Examples</h2>
 <p>The simplest use starts with the word <code>term</code> and then the term to be defined. Click on the underlined word to see a pop-up definition.</p>
 <p><code>{{&lt; term SESOI &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip"><p>Smallest Effect Size of Interest: the smallest effect that is
-theoretically or practically meaningful</p>
-<p>See <a href="https://doi.org/10.1177/2515245918770963">Equivalence
-Testing for Psychological Research</a> for a tutorial on methods for
-choosing an SESOI.</p></div><a class="glossary-link" href="javascript:void(0);">SESOI</a></button></p>
+<p><a class="glossary-ref" data-glossary-term="sesoi" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J3Nlc29pJyByb2xlPSd0b29sdGlwJz48cD5TbWFsbGVzdCBFZmZlY3QgU2l6ZSBvZiBJbnRlcmVzdDogdGhlIHNtYWxsZXN0IGVmZmVjdCB0aGF0IGlzCnRoZW9yZXRpY2FsbHkgb3IgcHJhY3RpY2FsbHkgbWVhbmluZ2Z1bDwvcD4KPHA+U2VlIDxhIGhyZWY9Imh0dHBzOi8vZG9pLm9yZy8xMC4xMTc3LzI1MTUyNDU5MTg3NzA5NjMiPkVxdWl2YWxlbmNlClRlc3RpbmcgZm9yIFBzeWNob2xvZ2ljYWwgUmVzZWFyY2g8L2E+IGZvciBhIHR1dG9yaWFsIG9uIG1ldGhvZHMgZm9yCmNob29zaW5nIGFuIFNFU09JLjwvcD48L2Rpdj4=" href="javascript:void(0);">SESOI</a></p>
 <p>No need to change if you’re just using different case:</p>
-<p><code>{{&lt; term html &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip"><p>This is a paragraph with a <a href="https://url.com">link</a>.</p>
-<p>And another paragraph before a list:</p>
-<ul>
-<li>Item 1</li>
-<li>List 2</li>
-</ul></div><a class="glossary-link" href="javascript:void(0);">html</a></button></p>
+<p><code>{{&lt; term sesoi &gt;}}</code></p>
+<p><a class="glossary-ref" data-glossary-term="sesoi" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J3Nlc29pJyByb2xlPSd0b29sdGlwJz48cD5TbWFsbGVzdCBFZmZlY3QgU2l6ZSBvZiBJbnRlcmVzdDogdGhlIHNtYWxsZXN0IGVmZmVjdCB0aGF0IGlzCnRoZW9yZXRpY2FsbHkgb3IgcHJhY3RpY2FsbHkgbWVhbmluZ2Z1bDwvcD4KPHA+U2VlIDxhIGhyZWY9Imh0dHBzOi8vZG9pLm9yZy8xMC4xMTc3LzI1MTUyNDU5MTg3NzA5NjMiPkVxdWl2YWxlbmNlClRlc3RpbmcgZm9yIFBzeWNob2xvZ2ljYWwgUmVzZWFyY2g8L2E+IGZvciBhIHR1dG9yaWFsIG9uIG1ldGhvZHMgZm9yCmNob29zaW5nIGFuIFNFU09JLjwvcD48L2Rpdj4=" href="javascript:void(0);">sesoi</a></p>
 <p>Use quotes if your term is more than one word.</p>
 <p><code>{{&lt; term "effect size" &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip"><p>‘quantitative reflection of the magnitude of some phenomenon that is
-used for the purpose of addressing a question of interest’ (Kelley &amp;
-Preacher, 2012)</p></div><a class="glossary-link" href="javascript:void(0);">effect size</a></button></p>
-<p>Add a <code>display</code> argument if you want to display something different than the term:</p>
-<p><code>{{&lt; term alpha display="alpha criterion" &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip"><p>The threshold chosen in Neyman-Pearson hypothesis testing to
-distinguish test results that lead to the decision to reject the null
-hypothesis, or not, based on the desired upper bound of the Type 1 error
-rate. An alpha level of 5% is most commonly used, but other alpha levels
-can be used as long as they are determined and preregistered by the
-researcher before the data is analyzed.</p></div><a class="glossary-link" href="javascript:void(0);">alpha criterion</a></button></p>
+<p><a class="glossary-ref" data-glossary-term="effect size" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J2VmZmVjdCBzaXplJyByb2xlPSd0b29sdGlwJz48cD7igJhxdWFudGl0YXRpdmUgcmVmbGVjdGlvbiBvZiB0aGUgbWFnbml0dWRlIG9mIHNvbWUgcGhlbm9tZW5vbiB0aGF0IGlzCnVzZWQgZm9yIHRoZSBwdXJwb3NlIG9mIGFkZHJlc3NpbmcgYSBxdWVzdGlvbiBvZiBpbnRlcmVzdOKAmSAoS2VsbGV5ICZhbXA7ClByZWFjaGVyLCAyMDEyKTwvcD48L2Rpdj4=" href="javascript:void(0);">effect size</a></p>
+<p>You can use Markdown or HTML in the definition, too:</p>
+<p><code>{{&lt; term html &gt;}}</code></p>
+<p><a class="glossary-ref" data-glossary-term="html" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J2h0bWwnIHJvbGU9J3Rvb2x0aXAnPjxwPlRoaXMgaXMgYSBwYXJhZ3JhcGggd2l0aCBhIDxhIGhyZWY9Imh0dHBzOi8vdXJsLmNvbSI+bGluazwvYT4uPC9wPgo8cD5BbmQgYW5vdGhlciBwYXJhZ3JhcGggYmVmb3JlIGEgbGlzdDo8L3A+Cjx1bD4KPGxpPkl0ZW0gMTwvbGk+CjxsaT5MaXN0IDI8L2xpPgo8L3VsPjwvZGl2Pg==" href="javascript:void(0);">html</a></p>
+<p>If you want the link to display something different from the term, append a pipe (<code>|</code>) character and the display text.</p>
+<p><code>{{&lt; term "alpha|alpha criterion" &gt;}}</code></p>
+<p>The <a class="glossary-ref" data-glossary-term="alpha" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J2FscGhhJyByb2xlPSd0b29sdGlwJz48cD5UaGUgdGhyZXNob2xkIGNob3NlbiBpbiBOZXltYW4tUGVhcnNvbiBoeXBvdGhlc2lzIHRlc3RpbmcgdG8KZGlzdGluZ3Vpc2ggdGVzdCByZXN1bHRzIHRoYXQgbGVhZCB0byB0aGUgZGVjaXNpb24gdG8gcmVqZWN0IHRoZSBudWxsCmh5cG90aGVzaXMsIG9yIG5vdCwgYmFzZWQgb24gdGhlIGRlc2lyZWQgdXBwZXIgYm91bmQgb2YgdGhlIFR5cGUgMSBlcnJvcgpyYXRlLiBBbiBhbHBoYSBsZXZlbCBvZiA1JSBpcyBtb3N0IGNvbW1vbmx5IHVzZWQsIGJ1dCBvdGhlciBhbHBoYSBsZXZlbHMKY2FuIGJlIHVzZWQgYXMgbG9uZyBhcyB0aGV5IGFyZSBkZXRlcm1pbmVkIGFuZCBwcmVyZWdpc3RlcmVkIGJ5IHRoZQpyZXNlYXJjaGVyIGJlZm9yZSB0aGUgZGF0YSBpcyBhbmFseXplZC48L3A+PC9kaXY+" href="javascript:void(0);">alpha criterion</a> is…</p>
 <section id="definitions" class="level3">
 <h3 class="anchored" data-anchor-id="definitions">Definitions</h3>
 <p>If you need to include a definition for a term that is not in the glossary file or is different from the one in the glossary file, you can set the <code>def</code> argument.</p>
 <p><code>{{&lt; term quarto def="An open-source scientific and technical publishing system" &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip">An
-
-open-source
-
-scientific
-
-and
-
-technical
-
-publishing
-
-system</div><a class="glossary-link" href="javascript:void(0);">quarto</a></button></p>
+<p><a class="glossary-ref" data-glossary-term="quarto" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J3F1YXJ0bycgcm9sZT0ndG9vbHRpcCc+QW4KCm9wZW4tc291cmNlCgpzY2llbnRpZmljCgphbmQKCnRlY2huaWNhbAoKcHVibGlzaGluZwoKc3lzdGVtPC9kaXY+" href="javascript:void(0);">quarto</a></p>
 </section>
 <section id="add-to-definition-list" class="level3">
 <h3 class="anchored" data-anchor-id="add-to-definition-list">Add to Definition List</h3>
 <p>If you don’t want to add a glossary item to the definition list, set <code>add_to_deflist=false</code>.</p>
 <p><code>{{&lt; term SESOI add_to_deflist=true &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip"><p>Smallest Effect Size of Interest: the smallest effect that is
-theoretically or practically meaningful</p>
-<p>See <a href="https://doi.org/10.1177/2515245918770963">Equivalence
-Testing for Psychological Research</a> for a tutorial on methods for
-choosing an SESOI.</p></div><a class="glossary-link" href="javascript:void(0);">SESOI</a></button></p>
+<p><a class="glossary-ref" data-glossary-term="sesoi" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J3Nlc29pJyByb2xlPSd0b29sdGlwJz48cD5TbWFsbGVzdCBFZmZlY3QgU2l6ZSBvZiBJbnRlcmVzdDogdGhlIHNtYWxsZXN0IGVmZmVjdCB0aGF0IGlzCnRoZW9yZXRpY2FsbHkgb3IgcHJhY3RpY2FsbHkgbWVhbmluZ2Z1bDwvcD4KPHA+U2VlIDxhIGhyZWY9Imh0dHBzOi8vZG9pLm9yZy8xMC4xMTc3LzI1MTUyNDU5MTg3NzA5NjMiPkVxdWl2YWxlbmNlClRlc3RpbmcgZm9yIFBzeWNob2xvZ2ljYWwgUmVzZWFyY2g8L2E+IGZvciBhIHR1dG9yaWFsIG9uIG1ldGhvZHMgZm9yCmNob29zaW5nIGFuIFNFU09JLjwvcD48L2Rpdj4=" href="javascript:void(0);">SESOI</a></p>
 <p><code>{{&lt; term R def="The best language" add_to_deflist=false &gt;}}</code></p>
-<p><button class="glossary-ref"><div class="glossary-def" role="tooltip">The
-
-best
-
-language</div><a class="glossary-link" href="javascript:void(0);">R</a></button></p>
+<p><a class="glossary-ref" data-glossary-term="r" data-glossary-def-base64="PGRpdiBjbGFzcz0nZ2xvc3NhcnktZGVmJyBkYXRhLWdsb3NzYXJ5LXRlcm09J3InIHJvbGU9J3Rvb2x0aXAnPlRoZQoKYmVzdAoKbGFuZ3VhZ2U8L2Rpdj4=" href="javascript:void(0);">R</a></p>
 </section>
 <section id="definition-list" class="level3">
 <h3 class="anchored" data-anchor-id="definition-list">Definition List</h3>
 <p>If you set <code>deflist=true</code>, you will get a glossary <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">definition list</a> with all the terms you’ve defined on this page.</p>
 <p><code>{{&lt; term deflist=true &gt;}}</code></p>
 <p></p><dl class="glossary_dl">
-<dt>alpha</dt>
-<dd><p>The threshold chosen in Neyman-Pearson hypothesis testing to
-distinguish test results that lead to the decision to reject the null
-hypothesis, or not, based on the desired upper bound of the Type 1 error
-rate. An alpha level of 5% is most commonly used, but other alpha levels
-can be used as long as they are determined and preregistered by the
-researcher before the data is analyzed.</p></dd>
 <dt>effect size</dt>
 <dd><p>‘quantitative reflection of the magnitude of some phenomenon that is
 used for the purpose of addressing a question of interest’ (Kelley &amp;
@@ -630,19 +591,35 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script>
   const refs = document.querySelectorAll(".glossary-ref");
+  var activeRef, oldRef;
 
   refs.forEach((ref) => {
-    const link = ref.querySelector(".glossary-link");
-    const def = ref.querySelector(".glossary-def");
+    //const def_string = atob(ref.getAttribute("data-glossary-def-base64"));
+    const def_string = decodeURIComponent(escape(window.atob( ref.getAttribute("data-glossary-def-base64") )));
+    let new_def = document.createElement("div");
+    new_def.innerHTML = def_string;
+
+    document.body.appendChild(new_def);
+
+    const def = document.querySelector(
+      "div[data-glossary-term='" + ref.getAttribute("data-glossary-term") + "']"
+    );
+
     const popperInstance = Popper.createPopper(ref, def, {
       placement: "auto",
     });
 
     function show() {
-      // Make the def visible
-      def.setAttribute("data-show", "");
+      // Hide the old one if it exists
+      if (activeRef != null) {
+        oldRef = activeRef;
+        oldRef.dispatchEvent(new Event("focusout"));
+        oldRef = null; // Clear the old ref after hiding it
+      }
+      activeRef = ref; // Set the new active ref
+      def.setAttribute("data-show", ""); // Show the definition by adding the data-show attribute
 
-      // Enable the event listeners
+      // Enable the event listeners:
       popperInstance.setOptions((options) => ({
         ...options,
         modifiers: [
@@ -656,28 +633,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     function hide() {
-      // Hide the def
-      def.removeAttribute("data-show");
-
-      // Disable the event listeners
-      popperInstance.setOptions((options) => ({
-        ...options,
-        modifiers: [
-          ...options.modifiers,
-          { name: "eventListeners", enabled: false },
-        ],
-      }));
+      // Only hide if the related target is null (i.e. the user clicked outside the popover):
+      if ((event.relatedTarget === null || event.relatedTarget === undefined)) {
+        def.removeAttribute("data-show");
+        activeRef == null        // Disable the event listeners
+        popperInstance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: "eventListeners", enabled: false },
+          ],
+        }));
+      } 
     }
 
-    const showEvents = ["click"];
-    const hideEvents = ["blur"];
+    const showEvents = ["click", "touchstart"];
+    const hideEvents = ["focusout"];
 
     showEvents.forEach((event) => {
-      link.addEventListener(event, show);
+      ref.addEventListener(event, show);
     });
 
     hideEvents.forEach((event) => {
-      link.addEventListener(event, hide);
+      ref.addEventListener(event, hide);
     });
   });
 </script>
